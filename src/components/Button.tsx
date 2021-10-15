@@ -21,15 +21,16 @@ so to test that aspect out, create a file ./src/stories/Button.tsx:
 // 	</button>
 // );
 
-interface ButtonProps {
+export interface ButtonProps {
 	label?: string;
 	backgroundColor?: string;
 	size?: "sm" | "md" | "lg";
 	handleClick?(...args: unknown[]): unknown;
 }
 
-function Button({
-	label: any,
+export function Button({
+	// label: any, -> "can't find label"
+	label = "button",
 	backgroundColor = "red",
 	size = "md",
 	handleClick,
@@ -48,5 +49,3 @@ function Button({
 		</button>
 	);
 }
-
-export default Button;
