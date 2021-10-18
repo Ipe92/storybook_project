@@ -1,5 +1,6 @@
 // https://storybook.js.org/docs/react/workflows/unit-testing
 
+import React from "react";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
 
@@ -40,6 +41,11 @@ describe("Small button", () => {
 		render(<Small {...Small.args} />);
 		expect(screen.getByRole("button")).toHaveTextContent("Press Me");
 	});
+
+	// it("should be small", () => {
+	// 	const component = render(<Small {...Small.args} />);
+	// 	expect(component.getByLabelText("Press Me")).toBeLessThan(3)
+	// });
 
 	it("should be small", () => {
 		render(<Small {...Small.args} />);
