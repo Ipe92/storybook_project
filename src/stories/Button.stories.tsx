@@ -27,21 +27,21 @@ Green.args = {
 
 export const Small = Template.bind({});
 Small.args = {
-	backgroundColor: "red",
+	backgroundColor: "blue",
 	label: "Press Me",
 	size: "sm",
 };
 
 export const Large = Template.bind({});
 Large.args = {
-	backgroundColor: "red",
+	backgroundColor: "blue",
 	label: "Press Me",
 	size: "lg",
 };
 
 export const LongLabel = Template.bind({});
 LongLabel.args = {
-	backgroundColor: "red",
+	backgroundColor: "blue",
 	label: "Press MePress MPress MPress MPress MPress MPress MPress MPress M",
 	size: "md",
 };
