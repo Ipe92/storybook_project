@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Button Green 1`] = `
+<button
+  style={
+    Object {
+      "backgroundColor": "green",
+      "border": "none",
+      "padding": "0.5rem 1rem",
+    }
+  }
+>
+  Press Me
+</button>
+`;
+
+exports[`Storyshots Components/Button Large 1`] = `
+<button
+  style={
+    Object {
+      "backgroundColor": "blue",
+      "border": "none",
+      "padding": "0.875rem 1.75rem",
+    }
+  }
+>
+  Press Me
+</button>
+`;
+
+exports[`Storyshots Components/Button Long Label 1`] = `
+<button
+  style={
+    Object {
+      "backgroundColor": "blue",
+      "border": "none",
+      "padding": "0.5rem 1rem",
+    }
+  }
+>
+  Press MePress MPress MPress MPress MPress MPress MPress MPress M
+</button>
+`;
+
+exports[`Storyshots Components/Button Red 1`] = `
+<button
+  style={
+    Object {
+      "backgroundColor": "red",
+      "border": "none",
+      "padding": "0.5rem 1rem",
+    }
+  }
+>
+  Press Me
+</button>
+`;
+
+exports[`Storyshots Components/Button Small 1`] = `
+<button
+  style={
+    Object {
+      "backgroundColor": "blue",
+      "border": "none",
+      "padding": "0.375rem 0.75rem",
+    }
+  }
+>
+  Press Me
+</button>
+`;

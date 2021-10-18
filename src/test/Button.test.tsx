@@ -43,7 +43,9 @@ describe("Small button", () => {
 
 	it("should be small", () => {
 		render(<Small {...Small.args} />);
-		expect(screen.getByRole("button")).toHaveValue(size, "sm");
+		expect(screen.getByRole("button")).toHaveStyle({
+			size: "sm",
+		});
 	});
 });
 
@@ -62,8 +64,8 @@ describe("Large button", () => {
 });
 
 // Figure out how to test label length
+// Now it just tests with the same string
 /*
-
 .toHaveLength(number)#
 Use .toHaveLength to check that an object has a .length property and it is set to a certain numeric value.
 
@@ -78,6 +80,8 @@ describe("Long label button", () => {
 
 	it("should have long label", () => {
 		render(<LongLabel {...LongLabel.args} />);
-		expect(screen.getByRole("button")).toHaveTextContent("Press Me");
+		expect(screen.getByRole("button")).toHaveTextContent(
+			"Press MePress MPress MPress MPress MPress MPress MPress MPress M",
+		);
 	});
 });
