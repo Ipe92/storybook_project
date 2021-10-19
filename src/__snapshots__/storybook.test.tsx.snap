@@ -2,12 +2,12 @@
 
 exports[`Storyshots Components/Button Green 1`] = `
 <button
-  className="sc-bdfBQB jtoziG"
-  color="#ffff"
+  className="sc-bdfBQB hUxUNx"
   style={
     Object {
       "backgroundColor": "green",
       "border": "none",
+      "color": "black",
       "padding": "2rem 4rem",
     }
   }
@@ -18,12 +18,12 @@ exports[`Storyshots Components/Button Green 1`] = `
 
 exports[`Storyshots Components/Button Large 1`] = `
 <button
-  className="sc-bdfBQB jtoziG"
-  color="#ffff"
+  className="sc-bdfBQB hUxUNx"
   style={
     Object {
       "backgroundColor": "blue",
       "border": "none",
+      "color": "black",
       "padding": "3rem 6rem",
     }
   }
@@ -34,12 +34,12 @@ exports[`Storyshots Components/Button Large 1`] = `
 
 exports[`Storyshots Components/Button Long Label 1`] = `
 <button
-  className="sc-bdfBQB jtoziG"
-  color="#ffff"
+  className="sc-bdfBQB hUxUNx"
   style={
     Object {
       "backgroundColor": "blue",
       "border": "none",
+      "color": "black",
       "padding": "2rem 4rem",
     }
   }
@@ -50,12 +50,12 @@ exports[`Storyshots Components/Button Long Label 1`] = `
 
 exports[`Storyshots Components/Button Red 1`] = `
 <button
-  className="sc-bdfBQB jtoziG"
-  color="#ffff"
+  className="sc-bdfBQB hUxUNx"
   style={
     Object {
       "backgroundColor": "red",
       "border": "none",
+      "color": "#d9d9d9",
       "padding": "2rem 4rem",
     }
   }
@@ -66,12 +66,12 @@ exports[`Storyshots Components/Button Red 1`] = `
 
 exports[`Storyshots Components/Button Small 1`] = `
 <button
-  className="sc-bdfBQB jtoziG"
-  color="#ffff"
+  className="sc-bdfBQB hUxUNx"
   style={
     Object {
       "backgroundColor": "blue",
       "border": "none",
+      "color": "black",
       "padding": "1rem 2rem",
     }
   }

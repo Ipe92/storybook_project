@@ -3,6 +3,7 @@ import styled from "styled-components";
 export interface ButtonProps {
 	label?: string;
 	backgroundColor?: string;
+	color?: string;
 	size?: "sm" | "md" | "lg";
 	handleClick?(...args: unknown[]): unknown;
 }
@@ -10,6 +11,7 @@ export interface ButtonProps {
 export function Button({
 	label = "button",
 	backgroundColor = "green",
+	color = "black",
 	size = "md",
 	handleClick,
 }: ButtonProps) {
@@ -19,12 +21,13 @@ export function Button({
 
 	const style = {
 		backgroundColor,
+		color,
 		padding: `${scale * 1}rem ${scale * 2}rem`,
 		border: "none",
 	};
 
 	return (
-		<StyledButton onClick={handleClick} style={style} color="#ffff">
+		<StyledButton onClick={handleClick} style={style}>
 			{label}
 		</StyledButton>
 	);
