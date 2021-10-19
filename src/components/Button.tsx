@@ -10,7 +10,7 @@ export interface ButtonProps {
 export function Button({
 	// label: any, -> "can't find label"
 	label = "button",
-	backgroundColor = "red",
+	backgroundColor = "green",
 	size = "md",
 	handleClick,
 }: ButtonProps) {
