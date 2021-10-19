@@ -84,3 +84,16 @@ exports[`Storyshots Components/Button Small 1`] = `
   Press Me
 </button>
 `;
+
+exports[`Storyshots Components/DateCircle First Story 1`] = `
+<div
+  className="sc-gsTEea gifHbh"
+>
+  <p>
+    17
+  </p>
+  <p>
+    DEC
+  </p>
+</div>
+`;

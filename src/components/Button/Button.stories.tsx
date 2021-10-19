@@ -1,4 +1,3 @@
-// Typescript needs these to work
 import { Meta, Story } from "@storybook/react";
 
 import { ButtonProps, Button } from "./Button";
