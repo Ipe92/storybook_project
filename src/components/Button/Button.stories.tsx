@@ -1,7 +1,7 @@
 // Typescript needs these to work
 import { Meta, Story } from "@storybook/react";
 
-import { ButtonProps, Button } from "../components/Button/Button";
+import { ButtonProps, Button } from "./Button";
 
 export default {
 	title: "Components/Button",
