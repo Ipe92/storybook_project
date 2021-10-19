@@ -6,6 +6,8 @@ import "@testing-library/jest-dom/extend-expect";
 
 import { Red, Green, Small, Large, LongLabel } from "../stories/Button.stories";
 
+beforeEach(() => {});
+
 describe("red button", () => {
 	it("renders the button in the primary state", () => {
 		render(<Red {...Red.args} />);
