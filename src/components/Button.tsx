@@ -1,4 +1,4 @@
-// Step 5: Test Props
+import { StyledButton } from "./styles/Button.styled";
 
 export interface ButtonProps {
 	label?: string;
@@ -8,7 +8,6 @@ export interface ButtonProps {
 }
 
 export function Button({
-	// label: any, -> "can't find label"
 	label = "button",
 	backgroundColor = "green",
 	size = "md",
@@ -25,8 +24,8 @@ export function Button({
 	};
 
 	return (
-		<button onClick={handleClick} style={style}>
+		<StyledButton onClick={handleClick} style={style} color="#fff">
 			{label}
-		</button>
+		</StyledButton>
 	);
 }
