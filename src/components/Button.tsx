@@ -14,12 +14,13 @@ export function Button({
 	size = "md",
 	handleClick,
 }: ButtonProps) {
-	let scale = 1;
-	if (size === "sm") scale = 0.75;
-	if (size === "lg") scale = 1.75;
+	let scale = 2;
+	if (size === "sm") scale = 1;
+	if (size === "lg") scale = 3;
 
 	const style = {
 		backgroundColor,
+		background: "blue",
 		padding: `${scale * 0.5}rem ${scale * 1}rem`,
 		border: "none",
 	};
