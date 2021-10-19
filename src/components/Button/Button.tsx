@@ -11,7 +11,7 @@ export interface ButtonProps {
 export function Button({
 	label = "button",
 	backgroundColor = "green",
-	color = "black",
+	color = "#DAA520",
 	size = "md",
 	handleClick,
 }: ButtonProps) {
@@ -27,7 +27,12 @@ export function Button({
 	};
 
 	return (
-		<StyledButton onClick={handleClick} style={style}>
+		<StyledButton
+			onClick={handleClick}
+			style={style}
+			color={color}
+			backgroundColor={backgroundColor}
+		>
 			{label}
 		</StyledButton>
 	);
@@ -41,7 +46,8 @@ const StyledButton = styled.button<ButtonProps>`
 	font-size: 16px;
 	font-weight: 700;
 	padding: 15px 60px;
-	color: ${({ color }) => color || "#333"};
+	background: ${({ backgroundColor }) => backgroundColor};
+	color: ${({ color }) => color};
 
 	&:hover {
 		opacity: 0.9;
