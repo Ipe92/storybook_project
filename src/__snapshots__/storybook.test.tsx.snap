@@ -2,8 +2,8 @@
 
 exports[`Storyshots Components/Button Green 1`] = `
 <button
-  className="sc-bdfBQB fgWrUn"
-  color="#fff"
+  className="sc-bdfBQB jtoziG"
+  color="#ffff"
   style={
     Object {
       "backgroundColor": "green",
@@ -18,8 +18,8 @@ exports[`Storyshots Components/Button Green 1`] = `
 
 exports[`Storyshots Components/Button Large 1`] = `
 <button
-  className="sc-bdfBQB fgWrUn"
-  color="#fff"
+  className="sc-bdfBQB jtoziG"
+  color="#ffff"
   style={
     Object {
       "backgroundColor": "blue",
@@ -34,8 +34,8 @@ exports[`Storyshots Components/Button Large 1`] = `
 
 exports[`Storyshots Components/Button Long Label 1`] = `
 <button
-  className="sc-bdfBQB fgWrUn"
-  color="#fff"
+  className="sc-bdfBQB jtoziG"
+  color="#ffff"
   style={
     Object {
       "backgroundColor": "blue",
@@ -50,8 +50,8 @@ exports[`Storyshots Components/Button Long Label 1`] = `
 
 exports[`Storyshots Components/Button Red 1`] = `
 <button
-  className="sc-bdfBQB fgWrUn"
-  color="#fff"
+  className="sc-bdfBQB jtoziG"
+  color="#ffff"
   style={
     Object {
       "backgroundColor": "red",
@@ -66,8 +66,8 @@ exports[`Storyshots Components/Button Red 1`] = `
 
 exports[`Storyshots Components/Button Small 1`] = `
 <button
-  className="sc-bdfBQB fgWrUn"
-  color="#fff"
+  className="sc-bdfBQB jtoziG"
+  color="#ffff"
   style={
     Object {
       "backgroundColor": "blue",

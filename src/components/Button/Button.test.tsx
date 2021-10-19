@@ -6,7 +6,7 @@
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
 
-import { Red, Green, Small, Large, LongLabel } from "../stories/Button.stories";
+import { Red, Green, Small, Large, LongLabel } from "../../stories/Button.stories";
 
 beforeEach(() => {});
 
