@@ -10,8 +10,8 @@ export interface ButtonProps {
 
 export function Button({
 	label = "button",
-	backgroundColor = "green",
-	color = "#DAA520",
+	backgroundColor = "blue",
+	color = "white",
 	size = "md",
 	handleClick,
 }: ButtonProps) {
