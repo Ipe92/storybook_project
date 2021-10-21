@@ -1,88 +1,168 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Components/Button Green 1`] = `
-<button
-  className="sc-bdfBQB kPukBi"
-  color="black"
-  style={
-    Object {
-      "backgroundColor": "green",
-      "border": "none",
-      "color": "black",
-      "padding": "2rem 4rem",
+Array [
+  <button
+    className="sc-bdfBQB kPukBi"
+    color="black"
+    style={
+      Object {
+        "backgroundColor": "green",
+        "border": "none",
+        "color": "black",
+        "padding": "2rem 4rem",
+      }
     }
-  }
->
-  Press Me
-</button>
+  >
+    Press Me
+  </button>,
+  <button
+    className="sc-bdfBQB kPukBi"
+    color="black"
+    style={
+      Object {
+        "backgroundColor": "green",
+        "border": "none",
+        "color": "black",
+        "padding": "2rem 4rem",
+      }
+    }
+  >
+    Press Me
+  </button>,
+]
 `;
 
 exports[`Storyshots Components/Button Large 1`] = `
-<button
-  className="sc-bdfBQB cmelmH"
-  color="black"
-  style={
-    Object {
-      "backgroundColor": "blue",
-      "border": "none",
-      "color": "black",
-      "padding": "3rem 6rem",
+Array [
+  <button
+    className="sc-bdfBQB cmelmH"
+    color="black"
+    style={
+      Object {
+        "backgroundColor": "blue",
+        "border": "none",
+        "color": "black",
+        "padding": "3rem 6rem",
+      }
     }
-  }
->
-  Press Me
-</button>
+  >
+    Press Me
+  </button>,
+  <button
+    className="sc-bdfBQB cmelmH"
+    color="black"
+    style={
+      Object {
+        "backgroundColor": "blue",
+        "border": "none",
+        "color": "black",
+        "padding": "3rem 6rem",
+      }
+    }
+  >
+    Press Me
+  </button>,
+]
 `;
 
 exports[`Storyshots Components/Button Long Label 1`] = `
-<button
-  className="sc-bdfBQB cmelmH"
-  color="black"
-  style={
-    Object {
-      "backgroundColor": "blue",
-      "border": "none",
-      "color": "black",
-      "padding": "2rem 4rem",
+Array [
+  <button
+    className="sc-bdfBQB cmelmH"
+    color="black"
+    style={
+      Object {
+        "backgroundColor": "blue",
+        "border": "none",
+        "color": "black",
+        "padding": "2rem 4rem",
+      }
     }
-  }
->
-  Press MePress MPress MPress MPress MPress MPress MPress MPress M
-</button>
+  >
+    Press MePress MPress MPress MPress MPress MPress MPress MPress M
+  </button>,
+  <button
+    className="sc-bdfBQB cmelmH"
+    color="black"
+    style={
+      Object {
+        "backgroundColor": "blue",
+        "border": "none",
+        "color": "black",
+        "padding": "2rem 4rem",
+      }
+    }
+  >
+    Press MePress MPress MPress MPress MPress MPress MPress MPress M
+  </button>,
+]
 `;
 
 exports[`Storyshots Components/Button Red 1`] = `
-<button
-  className="sc-bdfBQB gWqejb"
-  color="#d9d9d9"
-  style={
-    Object {
-      "backgroundColor": "red",
-      "border": "none",
-      "color": "#d9d9d9",
-      "padding": "2rem 4rem",
+Array [
+  <button
+    className="sc-bdfBQB gWqejb"
+    color="#d9d9d9"
+    style={
+      Object {
+        "backgroundColor": "red",
+        "border": "none",
+        "color": "#d9d9d9",
+        "padding": "2rem 4rem",
+      }
     }
-  }
->
-  Press Me
-</button>
+  >
+    Press Me
+  </button>,
+  <button
+    className="sc-bdfBQB gWqejb"
+    color="#d9d9d9"
+    style={
+      Object {
+        "backgroundColor": "red",
+        "border": "none",
+        "color": "#d9d9d9",
+        "padding": "2rem 4rem",
+      }
+    }
+  >
+    Press Me
+  </button>,
+]
 `;
 
 exports[`Storyshots Components/Button Small 1`] = `
-<button
-  className="sc-bdfBQB cmelmH"
-  color="black"
-  style={
-    Object {
-      "backgroundColor": "blue",
-      "border": "none",
-      "color": "black",
-      "padding": "1rem 2rem",
+Array [
+  <button
+    className="sc-bdfBQB cmelmH"
+    color="black"
+    style={
+      Object {
+        "backgroundColor": "blue",
+        "border": "none",
+        "color": "black",
+        "padding": "1rem 2rem",
+      }
     }
-  }
->
-  Press Me
-</button>
+  >
+    Press Me
+  </button>,
+  <button
+    className="sc-bdfBQB cmelmH"
+    color="black"
+    style={
+      Object {
+        "backgroundColor": "blue",
+        "border": "none",
+        "color": "black",
+        "padding": "1rem 2rem",
+      }
+    }
+  >
+    Press Me
+  </button>,
+]
 `;
 
 exports[`Storyshots Components/DateCircle First Story 1`] = `

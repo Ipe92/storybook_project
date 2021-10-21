@@ -8,6 +8,11 @@ export interface ButtonProps {
 	handleClick?(...args: unknown[]): unknown;
 }
 
+export interface ThemeProps {
+	primaryColor: string;
+	secondaryColor: string;
+}
+
 export function Button({
 	label = "button",
 	backgroundColor = "blue",
@@ -54,3 +59,8 @@ const StyledButton = styled.button<ButtonProps>`
 		transform: scale(0.98);
 	}
 `;
+
+export const theme: ThemeProps = {
+	primaryColor: "red",
+	secondaryColor: "white",
+};

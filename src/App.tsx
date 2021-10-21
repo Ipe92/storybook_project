@@ -1,14 +1,17 @@
 import React from "react";
-import { Button } from "./components/Button/Button";
+import { ThemeProvider } from "styled-components";
+import { Button, theme } from "./components/Button/Button";
 
 function App() {
 	return (
-		<>
-			<header className="App-header">
-				<h1>React storybook project</h1>
-				<Button />
-			</header>
-		</>
+		<ThemeProvider theme={theme}>
+			<>
+				<header className="App-header">
+					<h1>React storybook project</h1>
+					<Button />
+				</header>
+			</>
+		</ThemeProvider>
 	);
 }
 
