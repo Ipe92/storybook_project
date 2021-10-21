@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { ThemeProvider } from "styled-components";
+import { myTheme } from "../styles/theme";
 
 export interface ButtonProps {
 	label?: string;
@@ -6,11 +8,6 @@ export interface ButtonProps {
 	color?: string;
 	size?: "sm" | "md" | "lg";
 	handleClick?(...args: unknown[]): unknown;
-}
-
-export interface ThemeProps {
-	primaryColor: string;
-	secondaryColor: string;
 }
 
 export function Button({
@@ -32,14 +29,16 @@ export function Button({
 	};
 
 	return (
-		<StyledButton
-			onClick={handleClick}
-			style={style}
-			color={color}
-			backgroundColor={backgroundColor}
-		>
-			{label}
-		</StyledButton>
+		<ThemeProvider theme={myTheme}>
+			<StyledButton
+				onClick={handleClick}
+				style={style}
+				color={color}
+				backgroundColor={backgroundColor}
+			>
+				{label}
+			</StyledButton>
+		</ThemeProvider>
 	);
 }
 
@@ -59,8 +58,3 @@ const StyledButton = styled.button<ButtonProps>`
 		transform: scale(0.98);
 	}
 `;
-
-export const theme: ThemeProps = {
-	primaryColor: "red",
-	secondaryColor: "white",
-};
