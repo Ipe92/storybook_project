@@ -1,12 +1,10 @@
-// @react-theming/storybook-addon disables until themes work
-
 module.exports = {
 	stories: ["../src/**/*.stories.@(js|jsx|ts|tsx)"],
 	addons: [
 		"@storybook/addon-links",
 		"@storybook/addon-essentials",
 		"@storybook/preset-create-react-app",
-		// "@react-theming/storybook-addon",
+		"storybook-addon-styled-component-theme/dist/preset",
 	],
 	typescript: {
 		check: false,

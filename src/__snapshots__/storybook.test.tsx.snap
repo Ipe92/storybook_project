@@ -1,64 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components/Button Green 1`] = `
-<button
-  className="sc-bdfBQB gDTqtL"
-  color="black"
-  size={2}
->
-  Press Me
-</button>
-`;
+exports[`Storyshots Components/Button Green 1`] = `null`;
 
-exports[`Storyshots Components/Button Large 1`] = `
-<button
-  className="sc-bdfBQB gZobr"
-  color="black"
-  size={3}
->
-  Press Me
-</button>
-`;
+exports[`Storyshots Components/Button Large 1`] = `null`;
 
-exports[`Storyshots Components/Button Long Label 1`] = `
-<button
-  className="sc-bdfBQB gjLrZy"
-  color="black"
-  size={2}
->
-  Press MePress MPress MPress MPress MPress MPress MPress MPress M
-</button>
-`;
+exports[`Storyshots Components/Button Long Label 1`] = `null`;
 
-exports[`Storyshots Components/Button Red 1`] = `
-<button
-  className="sc-bdfBQB xbUGq"
-  color="#d9d9d9"
-  size={2}
->
-  Press Me
-</button>
-`;
+exports[`Storyshots Components/Button Red 1`] = `null`;
 
-exports[`Storyshots Components/Button Small 1`] = `
-<button
-  className="sc-bdfBQB hDEvgF"
-  color="black"
-  size={1}
->
-  Press Me
-</button>
-`;
+exports[`Storyshots Components/Button Small 1`] = `null`;
 
-exports[`Storyshots Components/DateCircle First Story 1`] = `
-<div
-  className="sc-gsTEea gifHbh"
->
-  <p>
-    17
-  </p>
-  <p>
-    DEC
-  </p>
-</div>
-`;
+exports[`Storyshots Components/DateCircle First Story 1`] = `null`;

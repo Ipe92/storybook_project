@@ -8,20 +8,9 @@ export interface ButtonProps {
 	handleClick?(...args: unknown[]): unknown;
 }
 
-export function Button({
-	label = "button",
-	color = "white",
-	backgroundColor = "blue",
-	size = 1.5,
-	handleClick,
-}: ButtonProps) {
+export function Button({ label = "button", size = 1.5, handleClick }: ButtonProps) {
 	return (
-		<StyledButton
-			onClick={handleClick}
-			size={size}
-			color={color}
-			backgroundColor={backgroundColor}
-		>
+		<StyledButton onClick={handleClick} size={size}>
 			{label}
 		</StyledButton>
 	);
