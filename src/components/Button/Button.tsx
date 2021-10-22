@@ -6,7 +6,7 @@ export interface ButtonProps {
 	label?: string;
 	backgroundColor?: string;
 	color?: string;
-	size?: "sm" | "md" | "lg";
+	size?: number;
 	handleClick?(...args: unknown[]): unknown;
 }
 
@@ -14,27 +14,16 @@ export function Button({
 	label = "button",
 	backgroundColor = "blue",
 	color = "white",
-	size = "md",
+	size = 1.5,
 	handleClick,
 }: ButtonProps) {
-	let scale = 2;
-	if (size === "sm") scale = 1;
-	if (size === "lg") scale = 3;
-
-	const style = {
-		backgroundColor,
-		color,
-		padding: `${scale * 1}rem ${scale * 2}rem`,
-		border: "none",
-	};
-
 	return (
 		<ThemeProvider theme={myTheme}>
 			<StyledButton
 				onClick={handleClick}
-				style={style}
-				color={color}
+				size={size}
 				backgroundColor={backgroundColor}
+				color={color}
 			>
 				{label}
 			</StyledButton>
@@ -49,12 +38,12 @@ const StyledButton = styled.button<ButtonProps>`
 	cursor: pointer;
 	font-size: 16px;
 	font-weight: 700;
-	padding: 15px 60px;
-	background: ${({ backgroundColor }) => backgroundColor || "#03ec49"};
-	color: ${({ color }) => color || "#f70b8d"};
+	padding: ${({ size }) => size}rem;
+	background: ${({ backgroundColor }) => backgroundColor || "#7e61ff"};
+	color: ${({ color }) => color || "#ffffff"};
 
 	&:hover {
-		opacity: 0.9;
-		transform: scale(0.98);
+		opacity: 0.8;
+		transform: scale(0.95);
 	}
 `;
