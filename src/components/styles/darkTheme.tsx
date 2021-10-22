@@ -1,12 +1,12 @@
 import { DefaultTheme } from "styled-components";
 
-const myTheme: DefaultTheme = {
+const darkTheme: DefaultTheme = {
 	borderRadius: "5px",
 
 	colors: {
-		main: "black",
-		secondary: "cyan",
+		main: "red",
+		secondary: "black",
 	},
 };
 
-export { myTheme };
+export { darkTheme };

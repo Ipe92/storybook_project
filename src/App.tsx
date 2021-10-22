@@ -1,16 +1,22 @@
-import React from "react";
 import { ThemeProvider } from "styled-components";
 import { Button } from "./components/Button/Button";
-import { myTheme } from "./components/styles/theme";
+import { lightTheme } from "./components/styles/lightTheme";
+import { darkTheme } from "./components/styles/darkTheme";
 
 function App() {
 	return (
-		<ThemeProvider theme={myTheme}>
+		<ThemeProvider theme={lightTheme}>
 			<>
 				<header className="App-header">
-					<h1>React storybook project</h1>
+					<h2>Button with light theme</h2>
 					<Button />
 				</header>
+				<ThemeProvider theme={darkTheme}>
+					<header className="App-header">
+						<h2>Button with dark theme</h2>
+						<Button />
+					</header>
+				</ThemeProvider>
 			</>
 		</ThemeProvider>
 	);
