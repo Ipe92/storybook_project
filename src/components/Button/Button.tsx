@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import { ThemeProvider } from "styled-components";
-import { myTheme } from "../styles/theme";
 
 export interface ButtonProps {
 	label?: string;
@@ -18,16 +16,14 @@ export function Button({
 	handleClick,
 }: ButtonProps) {
 	return (
-		<ThemeProvider theme={myTheme}>
-			<StyledButton
-				onClick={handleClick}
-				size={size}
-				backgroundColor={backgroundColor}
-				color={color}
-			>
-				{label}
-			</StyledButton>
-		</ThemeProvider>
+		<StyledButton
+			onClick={handleClick}
+			size={size}
+			backgroundColor={backgroundColor}
+			color={color}
+		>
+			{label}
+		</StyledButton>
 	);
 }
 
