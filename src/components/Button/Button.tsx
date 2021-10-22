@@ -50,8 +50,8 @@ const StyledButton = styled.button<ButtonProps>`
 	font-size: 16px;
 	font-weight: 700;
 	padding: 15px 60px;
-	background: ${({ backgroundColor }) => backgroundColor};
-	color: ${({ color }) => color};
+	background: ${({ backgroundColor }) => backgroundColor || "#fff"};
+	color: ${({ color }) => color || "#333"};
 
 	&:hover {
 		opacity: 0.9;
