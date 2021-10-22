@@ -7,9 +7,15 @@ This file will contain our global styles. Global styles are styles that are used
 These styles ensure that there is no margin or padding on the page, except in places where they are explicitly stated.
 */
 
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle, css } from "styled-components";
 
-export default createGlobalStyle`
+// theme is now fully typed
+export const MyComponent = styled.div`
+	color: ${(props) => props.theme.colors.main};
+`;
+
+// theme is also fully typed
+export const GlobalStyle = createGlobalStyle`
     *{
         margin: 0;
         padding: 0;
@@ -19,5 +25,10 @@ export default createGlobalStyle`
     }
     #root {
         margin:0 auto;
-    }
+    } 
+`;
+
+// and this theme is fully typed as well
+export const cssHelper = css`
+	border: 1px solid ${(props) => props.theme.borderRadius};
 `;

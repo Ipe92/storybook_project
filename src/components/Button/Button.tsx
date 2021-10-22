@@ -2,16 +2,16 @@ import styled from "styled-components";
 
 export interface ButtonProps {
 	label?: string;
-	backgroundColor?: string;
 	color?: string;
+	backgroundColor?: string;
 	size?: number;
 	handleClick?(...args: unknown[]): unknown;
 }
 
 export function Button({
 	label = "button",
-	backgroundColor = "blue",
 	color = "white",
+	backgroundColor = "blue",
 	size = 1.5,
 	handleClick,
 }: ButtonProps) {
@@ -19,8 +19,8 @@ export function Button({
 		<StyledButton
 			onClick={handleClick}
 			size={size}
-			backgroundColor={backgroundColor}
 			color={color}
+			backgroundColor={backgroundColor}
 		>
 			{label}
 		</StyledButton>
@@ -35,8 +35,8 @@ const StyledButton = styled.button<ButtonProps>`
 	font-size: 16px;
 	font-weight: 700;
 	padding: ${({ size }) => size}rem;
-	background: ${({ backgroundColor }) => backgroundColor || "#7e61ff"};
-	color: ${({ color }) => color || "#ffffff"};
+	color: ${({ theme }) => theme.colors.main || "#ffffff"};
+	background: ${({ theme }) => theme.colors.secondary || "#7e61ff"};
 
 	&:hover {
 		opacity: 0.8;
