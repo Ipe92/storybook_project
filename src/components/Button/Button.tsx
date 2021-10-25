@@ -1,4 +1,3 @@
-import { themes } from "@storybook/theming";
 import styled from "styled-components";
 
 export interface ButtonProps {

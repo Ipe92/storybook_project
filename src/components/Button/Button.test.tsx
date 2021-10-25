@@ -3,7 +3,7 @@
 // We really only need to test that the button gets rendered at all
 // (we don’t care about what the label says — it may say different things in different languages, depending on user locale settings).
 
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
 
 import { composeStories } from "@storybook/testing-react";
@@ -13,8 +13,8 @@ const { Small, Large, LongLabel } = composeStories(ButtonStories);
 
 describe("Testing storybook buttons", () => {
 	it("renders the small button", () => {
-		const { container } = render(<Small />);
-		expect(container).not.toBe(null);
+		render(<Small />);
+		expect(screen.getByText(/Press Me/i)).not.toBeNull();
 	});
 
 	it("renders the large button", () => {

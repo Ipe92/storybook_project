@@ -1,19 +1,4 @@
-import React from "react";
 import styled from "styled-components";
-
-export const DateCircleStyle = styled.div`
-	width: 50px;
-	height: 50px;
-	border-radius: 100%;
-	background: #fff;
-	border: 2px solid #daa520;
-	padding: 10px;
-	transform: translateY(133px);
-	& > p {
-		margin: 3px 0 0 15px;
-		color: #daa520;
-	}
-`;
 
 export interface DateCircleProps {
 	date: Date;
@@ -45,3 +30,18 @@ export function DateCircle({ date }: DateCircleProps) {
 		</DateCircleStyle>
 	);
 }
+
+export const DateCircleStyle = styled.div`
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	font-size: 16px;
+	background: ${({ theme }) => theme.colors.secondary};
+	border: 4px solid ${({ theme }) => theme.colors.main};
+	padding: 10px;
+	transform: translateY(133px);
+	& > p {
+		margin: 3px 0 0 15px;
+		color: ${({ theme }) => theme.colors.main};
+	}
+`;
