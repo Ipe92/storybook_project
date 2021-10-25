@@ -36,6 +36,7 @@ export function DateCircle({ date }: DateCircleProps) {
 export const DateCircleStyle = styled.div`
 	width: 50px;
 	height: 50px;
+	float: left;
 	border-radius: 100%;
 	font-size: 16px;
 	background: ${({ theme }) => theme.colors.secondary};

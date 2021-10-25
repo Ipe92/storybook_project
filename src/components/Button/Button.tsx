@@ -20,6 +20,7 @@ export function Button({ label = "button", size = 1 }: ButtonProps) {
 
 export const StyledButton = styled.button<ButtonProps>`
 	border-radius: 50px;
+	float: left;
 	border: none;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 	cursor: pointer;
