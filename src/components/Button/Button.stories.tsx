@@ -10,42 +10,20 @@ export default {
 
 const Template: Story<ButtonProps> = (args) => <Button {...args} />;
 
-export const Red = Template.bind({});
-Red.args = {
-	backgroundColor: "red",
-	color: "#d9d9d9",
-	label: "Press Me",
-	size: 2,
-};
-
-export const Green = Template.bind({});
-Green.args = {
-	backgroundColor: "green",
-	color: "black",
-	label: "Press Me",
-	size: 2,
-};
-
 export const Small = Template.bind({});
 Small.args = {
-	backgroundColor: "blue",
-	color: "black",
 	label: "Press Me",
 	size: 1,
 };
 
 export const Large = Template.bind({});
 Large.args = {
-	backgroundColor: "blue",
-	color: "black",
 	label: "Press Me",
 	size: 3,
 };
 
 export const LongLabel = Template.bind({});
 LongLabel.args = {
-	backgroundColor: "blue",
-	color: "black",
 	label: "Press MePress MPress MPress MPress MPress MPress MPress MPress M",
 	size: 2,
 };

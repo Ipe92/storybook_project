@@ -24,8 +24,8 @@ const StyledButton = styled.button<ButtonProps>`
 	font-size: 16px;
 	font-weight: 700;
 	padding: ${({ size }) => size}rem;
-	color: ${({ theme }) => theme.colors.main || "#ffffff"};
-	background: ${({ theme }) => theme.colors.secondary || "#7e61ff"};
+	color: ${({ theme }) => theme.colors.main};
+	background: ${({ theme }) => theme.colors.secondary};
 
 	&:hover {
 		opacity: 0.8;

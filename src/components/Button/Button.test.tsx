@@ -9,21 +9,7 @@ import "@testing-library/jest-dom/extend-expect";
 import { composeStories } from "@storybook/testing-react";
 import * as ButtonStories from "./Button.stories";
 
-const { Red, Green, Small, Large, LongLabel } = composeStories(ButtonStories);
-
-describe("red button", () => {
-	it("renders the button in the primary state", () => {
-		const { container } = render(<Red />);
-		expect(container).not.toBe(null);
-	});
-});
-
-describe("green button", () => {
-	it("renders the button in the primary state", () => {
-		const { container } = render(<Red />);
-		expect(container).not.toBe(null);
-	});
-});
+const { Small, Large, LongLabel } = composeStories(ButtonStories);
 
 describe("Small button", () => {
 	it("renders the button in the primary state", () => {

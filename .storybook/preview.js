@@ -9,8 +9,9 @@ import { ThemeProvider } from "styled-components";
 
 import { lightTheme } from "../src/components/styles/lightTheme";
 import { darkTheme } from "../src/components/styles/darkTheme";
+import { brightColors } from "../src/components/styles/brightColors";
 
-const themes = [lightTheme, darkTheme];
+const themes = [lightTheme, darkTheme, brightColors];
 addDecorator(withThemesProvider(themes), ThemeProvider);
 
 export const parameters = {
