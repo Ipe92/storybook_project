@@ -24,10 +24,12 @@ export function DateCircle({ date }: DateCircleProps) {
 	const day = date.getDate();
 
 	return (
-		<DateCircleStyle>
-			<p>{day}</p>
-			<p>{month}</p>
-		</DateCircleStyle>
+		<div data-testid="date-circle">
+			<DateCircleStyle>
+				<p>{day}</p>
+				<p>{month}</p>
+			</DateCircleStyle>
+		</div>
 	);
 }
 

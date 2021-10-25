@@ -16,7 +16,7 @@ const Template: Story<DateCircleProps> = (args) => {
 	return <DateCircle date={date} />;
 };
 
-export const FirstStory = Template.bind({});
-FirstStory.args = {
+export const DateCircleStory = Template.bind({});
+DateCircleStory.args = {
 	date: new Date("December 17, 1995 03:24:00"),
 };

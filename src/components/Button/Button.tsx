@@ -18,7 +18,7 @@ export function Button({ label = "button", size = 1 }: ButtonProps) {
 	);
 }
 
-const StyledButton = styled.button<ButtonProps>`
+export const StyledButton = styled.button<ButtonProps>`
 	border-radius: 50px;
 	border: none;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
