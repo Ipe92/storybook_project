@@ -11,22 +11,18 @@ import * as ButtonStories from "./Button.stories";
 
 const { Small, Large, LongLabel } = composeStories(ButtonStories);
 
-describe("Small button", () => {
-	it("renders the button in the primary state", () => {
+describe("Testing storybook buttons", () => {
+	it("renders the small button", () => {
 		const { container } = render(<Small />);
 		expect(container).not.toBe(null);
 	});
-});
 
-describe("Large button", () => {
-	it("renders the button in the primary state", () => {
+	it("renders the large button", () => {
 		const { container } = render(<Large />);
 		expect(container).not.toBe(null);
 	});
-});
 
-describe("Testing Button with stories", () => {
-	it("Should not be null", () => {
+	it("renders the long label button", () => {
 		const { container } = render(<LongLabel />);
 		expect(container).not.toBe(null);
 	});

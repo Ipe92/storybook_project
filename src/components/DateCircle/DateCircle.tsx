@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const DateCircleStyle = styled.div`
 	width: 50px;
-	heigth: 50px;
+	height: 50px;
 	border-radius: 100%;
 	background: #fff;
 	border: 2px solid #daa520;
