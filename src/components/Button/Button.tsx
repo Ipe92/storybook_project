@@ -5,10 +5,14 @@ export interface ButtonProps {
 	color?: string;
 	backgroundColor?: string;
 	size?: number;
-	handleClick?(...args: unknown[]): unknown;
+	handleClick?(): any;
 }
 
-export function Button({ label = "button", size = 1.5, handleClick }: ButtonProps) {
+const handleClick = () => {
+	console.log(`You pressed a button`);
+};
+
+export function Button({ label = "button", size = 1.5 }: ButtonProps) {
 	return (
 		<StyledButton onClick={handleClick} size={size}>
 			{label}
