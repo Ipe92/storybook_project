@@ -13,14 +13,6 @@ import { darkTheme } from "../src/components/styles/darkTheme";
 const themes = [lightTheme, darkTheme];
 addDecorator(withThemesProvider(themes), ThemeProvider);
 
-export const decorators = [
-	(Story) => (
-		<ThemeProvider theme={lightTheme}>
-			<Story />
-		</ThemeProvider>
-	),
-];
-
 export const parameters = {
 	actions: { argTypesRegex: "^on[A-Z].*" },
 	controls: {
