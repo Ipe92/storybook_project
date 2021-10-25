@@ -1,9 +1,8 @@
+import { themes } from "@storybook/theming";
 import styled from "styled-components";
 
 export interface ButtonProps {
 	label?: string;
-	color?: string;
-	backgroundColor?: string;
 	size?: number;
 	handleClick?(): any;
 }
@@ -12,9 +11,9 @@ const handleClick = () => {
 	console.log(`You pressed a button`);
 };
 
-export function Button({ label = "button", size = 1.5 }: ButtonProps) {
+export function Button({ label = "button", size = 1 }: ButtonProps) {
 	return (
-		<StyledButton onClick={handleClick} size={size}>
+		<StyledButton onClick={handleClick} size={size} label={label}>
 			{label}
 		</StyledButton>
 	);
