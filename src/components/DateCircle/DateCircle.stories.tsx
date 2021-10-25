@@ -10,7 +10,6 @@ export default {
 	},
 } as Meta;
 
-// //👇 We create a “template” of how args map to rendering
 const Template: Story<DateCircleProps> = (args) => {
 	const date = new Date(args.date);
 	return <DateCircle date={date} />;

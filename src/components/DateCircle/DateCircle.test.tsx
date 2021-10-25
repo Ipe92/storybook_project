@@ -8,17 +8,6 @@ import { lightTheme } from "../styles/lightTheme";
 
 const { DateCircleStory } = composeStories(DataCircleStories);
 
-// describe("Testing storybook dataCircle", () => {
-// 	it("renders the dataCircle", () => {
-// 		const { container } = render(
-// 			<ThemeProvider theme={lightTheme}>
-// 				<DateCircleStory />
-// 			</ThemeProvider>,
-// 		);
-// 		expect(container.querySelector("date-circle")).not.toBeNull();
-// 	});
-// });
-
 describe("Testing storybook dataCircle", () => {
 	it("renders the dataCircle", () => {
 		render(
