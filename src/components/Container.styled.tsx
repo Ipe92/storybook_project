@@ -8,6 +8,10 @@ export interface ContainerProps {
 export const Container = styled.div<ContainerProps>`
 	display: flex;
 	background: ${({ backgroundColor }) => backgroundColor};
-	border: 5px solid black;
+	border: none;
 	flex-direction: ${({ flexDirection }) => flexDirection};
+
+	@media (max-width: 1240px) {
+		flex-direction: column;
+	}
 `;
