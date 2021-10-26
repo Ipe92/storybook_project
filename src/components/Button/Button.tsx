@@ -19,6 +19,9 @@ export function Button({ label = "button", size = 1 }: ButtonProps) {
 }
 
 export const StyledButton = styled.button<ButtonProps>`
+	display: flex;
+	align-items: left;
+	justify-content: left;
 	border-radius: 50px;
 	border: none;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
@@ -28,8 +31,7 @@ export const StyledButton = styled.button<ButtonProps>`
 	padding: ${({ size }) => size}rem;
 	color: ${({ theme }) => theme.colors.main};
 	background: ${({ theme }) => theme.colors.secondary};
-	margin: auto;
-	float: initial;
+	margin: 10px;
 
 	&:hover {
 		opacity: 0.8;

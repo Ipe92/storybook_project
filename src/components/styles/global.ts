@@ -17,7 +17,7 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
         outline: 0;
         font-family: "Roboto","Open Sans";
-        text-align: center;
+        //text-align: center;
         font-weight: 500;
         /* background-color:#c0c0c0; */
         line-height: 1.5em;
