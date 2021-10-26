@@ -36,13 +36,14 @@ export function DateCircle({ date }: DateCircleProps) {
 export const DateCircleStyle = styled.div`
 	width: 50px;
 	height: 50px;
-	float: left;
 	border-radius: 100%;
 	font-size: 16px;
 	background: ${({ theme }) => theme.colors.secondary};
 	border: 4px solid ${({ theme }) => theme.colors.main};
 	padding: 10px;
-	transform: translateY(133px);
+	transform: translateY(0px);
+	margin: auto;
+	//float: left;
 	& > p {
 		margin: 3px 0 0 15px;
 		color: ${({ theme }) => theme.colors.main};

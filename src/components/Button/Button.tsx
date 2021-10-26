@@ -20,7 +20,6 @@ export function Button({ label = "button", size = 1 }: ButtonProps) {
 
 export const StyledButton = styled.button<ButtonProps>`
 	border-radius: 50px;
-	float: left;
 	border: none;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 	cursor: pointer;
@@ -29,9 +28,15 @@ export const StyledButton = styled.button<ButtonProps>`
 	padding: ${({ size }) => size}rem;
 	color: ${({ theme }) => theme.colors.main};
 	background: ${({ theme }) => theme.colors.secondary};
+	margin: auto;
+	float: initial;
 
 	&:hover {
 		opacity: 0.8;
 		transform: scale(0.95);
+	}
+	&:active {
+		color: ${({ theme }) => theme.colors.secondary};
+		background: ${({ theme }) => theme.colors.main};
 	}
 `;

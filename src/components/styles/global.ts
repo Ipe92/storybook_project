@@ -7,28 +7,22 @@ This file will contain our global styles. Global styles are styles that are used
 These styles ensure that there is no margin or padding on the page, except in places where they are explicitly stated.
 */
 
-import styled, { createGlobalStyle, css } from "styled-components";
-
-// theme is now fully typed
-export const MyComponent = styled.div`
-	color: ${(props) => props.theme.colors.main};
-`;
+import { createGlobalStyle } from "styled-components";
 
 // theme is also fully typed
 export const GlobalStyle = createGlobalStyle`
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
     *{
         margin: 0;
         padding: 0;
         outline: 0;
-        box-sizing:border-box;
-        font-family: "Open Sans", sans-serif;
+        font-family: "Roboto","Open Sans";
+        text-align: center;
+        font-weight: 500;
+        /* background-color:#c0c0c0; */
+        line-height: 1.5em;
     }
     #root {
         margin:0 auto;
     } 
-`;
-
-// and this theme is fully typed as well
-export const cssHelper = css`
-	border: 1px solid ${(props) => props.theme.borderRadius};
 `;
