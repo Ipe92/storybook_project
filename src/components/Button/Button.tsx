@@ -22,7 +22,7 @@ export const StyledButton = styled.button<ButtonProps>`
 	display: flex;
 	align-items: left;
 	justify-content: left;
-	border-radius: 50px;
+	border-radius: ${({ theme }) => theme.borderRadius};
 	border: none;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 	cursor: pointer;
