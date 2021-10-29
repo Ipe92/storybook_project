@@ -10,9 +10,9 @@ const { DateCircleStory } = composeStories(stories);
 
 it("renders the dataCircle", () => {
 	render(
-		<ThemeProvider theme={lightTheme}>
-			<DateCircleStory />,
-		</ThemeProvider>,
+		//<ThemeProvider theme={lightTheme}>
+		<DateCircleStory />,
+		//</ThemeProvider>,
 	);
 	expect(screen.getByTestId("date-circle")).not.toBeNull();
 });

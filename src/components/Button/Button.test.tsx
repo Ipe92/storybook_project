@@ -10,27 +10,27 @@ const { Small, Large, LongLabel } = composeStories(stories);
 
 test("it renders the small button", () => {
 	render(
-		<ThemeProvider theme={lightTheme}>
-			<Small />,
-		</ThemeProvider>,
+		//<ThemeProvider theme={lightTheme}>
+		<Small />,
+		//</ThemeProvider>,
 	);
 	expect(screen.getByText(/Press Me/i)).not.toBeNull();
 });
 
 test("it renders the large button", () => {
 	render(
-		<ThemeProvider theme={lightTheme}>
-			<Large />,
-		</ThemeProvider>,
+		//<ThemeProvider theme={lightTheme}>
+		<Large />,
+		//</ThemeProvider>,
 	);
 	expect(screen.getByText(/Press Me/i)).not.toBeNull();
 });
 
 test("it renders the long label button", () => {
 	render(
-		<ThemeProvider theme={lightTheme}>
-			<LongLabel />,
-		</ThemeProvider>,
+		//<ThemeProvider theme={lightTheme}>
+		<LongLabel />,
+		//</ThemeProvider>,
 	);
 	expect(screen.getByText(/Press Me/i)).not.toBeNull();
 });

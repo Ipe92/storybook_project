@@ -45,4 +45,4 @@ export const parameters = {
 	},
 };
 
-export const decorators = [withThemesProvider(THEMES)];
+export const decorators = [withThemesProvider(THEMES, { disableThemePreview: true })];
