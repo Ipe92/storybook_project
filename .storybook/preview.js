@@ -16,24 +16,7 @@ import { brightColors } from "../src/components/styles/brightColors";
 
 //addDecorator(withThemes(ThemeProvider, [lightTheme]));
 
-const THEMES = [
-	{
-		name: "lightTheme",
-		borderRadius: "50px",
-		colors: {
-			main: "white",
-			secondary: "blue",
-		},
-	},
-	{
-		name: "darkTheme",
-		borderRadius: "50px",
-		colors: {
-			main: "red",
-			secondary: "black",
-		},
-	},
-];
+const THEMES = [lightTheme, darkTheme, brightColors];
 
 export const parameters = {
 	actions: { argTypesRegellx: "^on[A-Z].*" },

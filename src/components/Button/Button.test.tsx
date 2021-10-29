@@ -1,36 +1,22 @@
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
-import { ThemeProvider } from "styled-components";
-
 import { composeStories } from "@storybook/testing-react";
+
 import * as stories from "./Button.stories";
-import { lightTheme } from "../styles/lightTheme";
 
 const { Small, Large, LongLabel } = composeStories(stories);
 
 test("it renders the small button", () => {
-	render(
-		//<ThemeProvider theme={lightTheme}>
-		<Small />,
-		//</ThemeProvider>,
-	);
+	render(<Small />);
 	expect(screen.getByText(/Press Me/i)).not.toBeNull();
 });
 
 test("it renders the large button", () => {
-	render(
-		//<ThemeProvider theme={lightTheme}>
-		<Large />,
-		//</ThemeProvider>,
-	);
+	render(<Large />);
 	expect(screen.getByText(/Press Me/i)).not.toBeNull();
 });
 
 test("it renders the long label button", () => {
-	render(
-		//<ThemeProvider theme={lightTheme}>
-		<LongLabel />,
-		//</ThemeProvider>,
-	);
+	render(<LongLabel />);
 	expect(screen.getByText(/Press Me/i)).not.toBeNull();
 });

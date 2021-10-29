@@ -1,63 +1,51 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Components/Button Large 1`] = `
-Array [
-  <button
-    className="sc-jSgvzq PfSkb"
-    label="Press Me"
-    onClick={[Function]}
-    size={3}
-  >
-    Press Me
-  </button>,
-  <div />,
-]
+<button
+  className="sc-jSgvzq PfSkb"
+  label="Press Me"
+  onClick={[Function]}
+  size={3}
+>
+  Press Me
+</button>
 `;
 
 exports[`Storyshots Components/Button Long Label 1`] = `
-Array [
-  <button
-    className="sc-jSgvzq gmnDDu"
-    label="Press MePress MPress MPress MPress MPress MPress MPress MPress M"
-    onClick={[Function]}
-    size={2}
-  >
-    Press MePress MPress MPress MPress MPress MPress MPress MPress M
-  </button>,
-  <div />,
-]
+<button
+  className="sc-jSgvzq gmnDDu"
+  label="Press MePress MPress MPress MPress MPress MPress MPress MPress M"
+  onClick={[Function]}
+  size={2}
+>
+  Press MePress MPress MPress MPress MPress MPress MPress MPress M
+</button>
 `;
 
 exports[`Storyshots Components/Button Small 1`] = `
-Array [
-  <button
-    className="sc-jSgvzq fOrpxV"
-    label="Press Me"
-    onClick={[Function]}
-    size={1}
-  >
-    Press Me
-  </button>,
-  <div />,
-]
+<button
+  className="sc-jSgvzq fOrpxV"
+  label="Press Me"
+  onClick={[Function]}
+  size={1}
+>
+  Press Me
+</button>
 `;
 
 exports[`Storyshots Components/DateCircle Date Circle Story 1`] = `
-Array [
+<div
+  data-testid="date-circle"
+>
   <div
-    data-testid="date-circle"
+    className="sc-gKseQn kqeNlt"
   >
-    <div
-      className="sc-gKseQn kqeNlt"
-    >
-      <p>
-        17
-      </p>
-      <p>
-        DEC
-      </p>
-    </div>
-  </div>,
-  <div />,
-]
+    <p>
+      17
+    </p>
+    <p>
+      DEC
+    </p>
+  </div>
+</div>
 `;

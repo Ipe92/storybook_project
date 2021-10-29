@@ -13,7 +13,6 @@ function App() {
 	return (
 		<Container flexDirection="row">
 			<GlobalStyle />
-
 			<ThemeProvider theme={lightTheme}>
 				<Header backgroundColor="grey" flexAmount={1} className="App-header">
 					<h2>Components with light theme</h2>
@@ -21,7 +20,6 @@ function App() {
 					<DateCircle date={new Date()} />
 				</Header>
 			</ThemeProvider>
-
 			<ThemeProvider theme={darkTheme}>
 				<Header backgroundColor="azure" flexAmount={1} className="App-header2">
 					<h2>Components with dark theme</h2>
@@ -29,7 +27,6 @@ function App() {
 					<DateCircle date={new Date()} />
 				</Header>
 			</ThemeProvider>
-
 			<ThemeProvider theme={brightColors}>
 				<Header backgroundColor="teal" flexAmount={1} className="App-header3">
 					<h2>Components with bright theme</h2>
