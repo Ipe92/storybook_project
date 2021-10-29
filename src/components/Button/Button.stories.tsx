@@ -8,7 +8,9 @@ export default {
 	argTypes: { handleClick: { action: "handleClick" } },
 } as Meta;
 
-const Template: Story<ButtonProps> = (args) => <Button {...args} />;
+const Template: Story<ButtonProps> = (args) => {
+	return <Button {...args} />;
+};
 
 export const Small = Template.bind({});
 Small.args = {

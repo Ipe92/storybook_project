@@ -6,35 +6,35 @@ import { GlobalStyle } from "./components/styles/global";
 
 import { Button } from "./components/Button/Button";
 import { DateCircle } from "./components/DateCircle/DateCircle";
-import { Container } from "./components/Container.styled";
-import { Header } from "./components/Header.styled";
+import { Container } from "./components/Container/Container";
+import { Header } from "./components/Header/Header";
 
 function App() {
 	return (
-		<Container flexDirection="row">
+		<>
 			<GlobalStyle />
 			<ThemeProvider theme={lightTheme}>
-				<Header backgroundColor="grey" flexAmount={1} className="App-header">
-					<h2>Components with light theme</h2>
+				<Container>
+					<Header text="Components with light theme" />
 					<Button />
 					<DateCircle date={new Date()} />
-				</Header>
+				</Container>
 			</ThemeProvider>
 			<ThemeProvider theme={darkTheme}>
-				<Header backgroundColor="azure" flexAmount={1} className="App-header2">
-					<h2>Components with dark theme</h2>
+				<Container>
+					<Header text="Components with dark theme" />
 					<Button />
 					<DateCircle date={new Date()} />
-				</Header>
+				</Container>
 			</ThemeProvider>
 			<ThemeProvider theme={brightColors}>
-				<Header backgroundColor="teal" flexAmount={1} className="App-header3">
-					<h2>Components with bright theme</h2>
+				<Container>
+					<Header text="Components with bright theme" />
 					<Button />
 					<DateCircle date={new Date()} />
-				</Header>
+				</Container>
 			</ThemeProvider>
-		</Container>
+		</>
 	);
 }
 

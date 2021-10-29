@@ -20,10 +20,10 @@ export function Button({ label = "button", size = 1 }: ButtonProps) {
 
 export const StyledButton = styled.button<ButtonProps>`
 	display: flex;
-	align-items: left;
-	justify-content: left;
+	align-items: center;
+	justify-content: center;
 	border-radius: ${({ theme }) => theme.borderRadius};
-	border: none;
+	border: 2px solid ${({ theme }) => theme.colors.main};
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 	cursor: pointer;
 	font-size: 16px;
