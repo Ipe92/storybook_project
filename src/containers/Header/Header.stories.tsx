@@ -12,6 +12,6 @@ const Template: Story<HeaderProps> = (args) => <Header {...args} />;
 export const HeaderStory = Template.bind({});
 HeaderStory.args = {
 	text: "Story Header",
-	fontSize: 16,
+	fontSize: 26,
 	color: "red",
 };

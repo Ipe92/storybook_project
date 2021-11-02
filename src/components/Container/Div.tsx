@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Div = styled.div`
 	display: flex;
 	border: 2px solid black;
 	flex: none;

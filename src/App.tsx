@@ -4,35 +4,35 @@ import { darkTheme } from "./components/styles/darkTheme";
 import { brightColors } from "./components/styles/brightColors";
 import { GlobalStyle } from "./components/styles/global";
 
-import { Button } from "./components/Button/Button";
-import { DateCircle } from "./components/DateCircle/DateCircle";
-import { Container } from "./components/Container/Container";
-import { Header } from "./components/Header/Header";
+import { Button } from "./containers/Button/Button";
+import { DateCircle } from "./containers/DateCircle/DateCircle";
+import { Div } from "./components/Container/Div";
+import { Header } from "./containers/Header/Header";
 
 function App() {
 	return (
 		<>
 			<GlobalStyle />
 			<ThemeProvider theme={lightTheme}>
-				<Container>
+				<Div>
 					<Header text="Components with light theme" />
 					<Button />
 					<DateCircle date={new Date()} />
-				</Container>
+				</Div>
 			</ThemeProvider>
 			<ThemeProvider theme={darkTheme}>
-				<Container>
+				<Div>
 					<Header text="Components with dark theme" />
 					<Button />
 					<DateCircle date={new Date()} />
-				</Container>
+				</Div>
 			</ThemeProvider>
 			<ThemeProvider theme={brightColors}>
-				<Container>
+				<Div>
 					<Header text="Components with bright theme" />
 					<Button />
 					<DateCircle date={new Date()} />
-				</Container>
+				</Div>
 			</ThemeProvider>
 		</>
 	);

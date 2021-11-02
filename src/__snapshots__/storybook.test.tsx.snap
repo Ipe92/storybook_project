@@ -33,18 +33,10 @@ exports[`Storyshots Components/Button Small 1`] = `
 </button>
 `;
 
-exports[`Storyshots Components/Container Asdasdasdsd 1`] = `
+exports[`Storyshots Components/Container Container Story 1`] = `
 <div
   className="sc-gKseQn tIYkY"
->
-  <h1
-    className="sc-iBPTik dLNHnX"
-    color="red"
-    fontSize={20}
-  >
-    Header
-  </h1>
-</div>
+/>
 `;
 
 exports[`Storyshots Components/Container Many Headers In Container 1`] = `
@@ -80,7 +72,7 @@ exports[`Storyshots Components/DateCircle Date Circle Story 1`] = `
   data-testid="date-circle"
 >
   <div
-    className="sc-iBPTik lnLnd"
+    className="sc-fubCzh kpuiBE"
   >
     <p>
       17
@@ -92,46 +84,12 @@ exports[`Storyshots Components/DateCircle Date Circle Story 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Header Asdasdasdsd 1`] = `
-<div
-  className="sc-gKseQn tIYkY"
->
-  <h1
-    className="sc-iBPTik dLNHnX"
-    color="red"
-    fontSize={20}
-  >
-    Header
-  </h1>
-</div>
-`;
-
-exports[`Storyshots Components/Header Container Story 1`] = `
-<div
-  className="sc-gKseQn tIYkY"
-/>
-`;
-
 exports[`Storyshots Components/Header Header Story 1`] = `
 <h1
-  className="sc-fubCzh eJZML"
+  className="sc-iBPTik ddIhGq"
   color="red"
   fontSize={16}
 >
   Story Header
 </h1>
-`;
-
-exports[`Storyshots Components/Header Many Items 1`] = `
-<div
-  className="sc-gKseQn tIYkY"
->
-  <h1
-    className="sc-iBPTik dLNHnX"
-    color="red"
-    fontSize={20}
-  >
-    Header
-  </h1>
-</div>
 `;

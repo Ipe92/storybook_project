@@ -17,7 +17,9 @@ export function Header({ text = "Header", fontSize = 20, color = "red" }: Header
 export const StyledHeader = styled.h1<HeaderProps>`
 	display: flex;
 	flex: none;
-	color: ${({ color }) => color}px;
+	//color: ${({ color }) => color};
+	color: ${({ theme }) => theme.colors.main};
+	background: ${({ theme }) => theme.colors.secondary};
 	font-size: ${({ fontSize }) => fontSize}px;
 	padding: 50px;
 `;
