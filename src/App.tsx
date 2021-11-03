@@ -8,14 +8,29 @@ import { Button } from "./containers/Button/Button";
 import { DateCircle } from "./containers/DateCircle/DateCircle";
 import { Div } from "./components/Container/Div";
 import { Header } from "./containers/Header/Header";
+import { useAppDispatch, useAppSelector } from "./redux/hooks";
+import { posted } from "./redux/features/post/post-slice";
 
 function App() {
+	const post = useAppSelector((state) => state.post.value);
+
+	console.log("global redux state is: ", post);
+
+	const dispatch = useAppDispatch();
+
+	const handleClick = () => {
+		dispatch(posted("asd"));
+	};
+
 	return (
 		<>
 			<GlobalStyle />
 			<ThemeProvider theme={lightTheme}>
 				<Div>
+					<p>Post value is: {post}</p>
+					<button onClick={handleClick}></button>
 					<Header text="Components with light theme" />
+					<button onClick={handleClick}>GLOBAL STATE</button>
 					<Button />
 					<DateCircle date={new Date()} />
 				</Div>

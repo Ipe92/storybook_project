@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { useAppDispatch, useAppSelector } from "../../redux/hooks";
+import { posted } from "../../redux/features/post/post-slice";
 
 export interface HeaderProps {
 	text?: string;
@@ -7,9 +9,11 @@ export interface HeaderProps {
 }
 
 export function Header({ text = "Header", fontSize = 20, color = "red" }: HeaderProps) {
+	const post = useAppSelector((state) => state.post.value);
+	const dispatch = useAppDispatch();
 	return (
 		<StyledHeader text={text} fontSize={fontSize} color={color}>
-			{text}
+			{post}
 		</StyledHeader>
 	);
 }
