@@ -23,7 +23,6 @@ export const PostForm = () => {
 
 	const onSubmit = (e: FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
-		console.log(formData);
 		setFormData(defaultFormData);
 		dispatch(posted(formData));
 	};
