@@ -8,6 +8,7 @@ import { Button } from "./containers/Button/Button";
 import { DateCircle } from "./containers/DateCircle/DateCircle";
 import { Div } from "./components/Container/Div";
 import { Header } from "./containers/Header/Header";
+import { Postform } from "./containers/PostForm/Postform";
 import { useAppDispatch, useAppSelector } from "./redux/hooks";
 import { posted } from "./redux/features/post/post-slice";
 
@@ -33,6 +34,7 @@ function App() {
 					<button onClick={handleClick}>GLOBAL STATE</button>
 					<Button />
 					<DateCircle date={new Date()} />
+					<Postform />
 				</Div>
 			</ThemeProvider>
 			<ThemeProvider theme={darkTheme}>

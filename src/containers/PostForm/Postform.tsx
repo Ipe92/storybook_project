@@ -1,54 +1,47 @@
 import { useAppDispatch, useAppSelector } from "../../redux/hooks";
 import { posted } from "../../redux/features/post/post-slice";
-import { useState, FormEvent } from "react";
+import { useState, FormEvent, ChangeEvent } from "react";
 
-const Postform = () => {
-	const [title, setTitle] = useState("");
-	const [body, setBody] = useState("");
+import React from "react";
 
-	interface postFormInterface {
-		title: string;
-		body: string;
-	}
+const defaultFormData = {
+	title: "",
+	body: "",
+};
 
-	// const onChangeTitle = (e: InputEvent<HTMLInputElement>) => {
-	// 	setTitle({ [e.target.name]: e.target.value });
-	// };
+export const Postform = () => {
+	const [formData, setFormData] = useState(defaultFormData);
+	const { title, body } = formData;
 
-	// const onChangeBody = (e: Inp) => {
-	// 	setBody({ [e.target.name]: e.target.value });
-	// };
+	const onChange = (e: ChangeEvent<HTMLInputElement>) => {
+		setFormData((prevState) => ({
+			...prevState,
+			[e.target.id]: e.target.value,
+		}));
+	};
 
 	const onSubmit = (e: FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
-
-		const { name, value } = event?.target as typeof event.target & {
-			name: { value: string };
-			value: { value: string };
-		};
+		console.log(formData);
+		setFormData(defaultFormData);
 	};
 
 	return (
 		<div>
-			<h1>Add Post</h1>
+			<h1>Form</h1>
+			<p>Create a post</p>
 			<form onSubmit={onSubmit}>
-				<div>
-					<fieldset>
-						<label htmlFor="name">Name:</label>
-						<input type="text" name="title" />
-					</fieldset>
-					<br />
-				</div>
+				<label htmlFor="title">Title</label>
 				<br />
-				<div>
-					<fieldset>
-						<label htmlFor="password">Password:</label>
-						<input type="password" />
-						{/* <textarea name="body" value={body} onChange={onChangeBody} /> */}
-					</fieldset>
-				</div>
+				<input type="text" id="title" value={title} onChange={onChange} />
 				<br />
-				<button type="submit">Submit</button>
+				<br />
+				<label htmlFor="body">Body</label>
+				<br />
+				<input type="text" id="body" value={body} onChange={onChange} />
+				<br />
+				<br />
+				<button type="submit">Upload post</button>
 			</form>
 		</div>
 	);
