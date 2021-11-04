@@ -5,7 +5,7 @@ interface PostState {
 }
 
 const initialState: PostState = {
-	value: "InitialState",
+	value: "default value",
 };
 
 const postSlice = createSlice({

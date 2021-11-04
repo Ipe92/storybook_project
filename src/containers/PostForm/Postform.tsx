@@ -2,14 +2,15 @@ import { useAppDispatch, useAppSelector } from "../../redux/hooks";
 import { posted } from "../../redux/features/post/post-slice";
 import { useState, FormEvent, ChangeEvent } from "react";
 
-import React from "react";
-
 const defaultFormData = {
 	title: "",
 	body: "",
 };
 
-export const Postform = () => {
+export const PostForm = () => {
+	const post = useAppSelector((state) => state.post.value);
+	const dispatch = useAppDispatch();
+
 	const [formData, setFormData] = useState(defaultFormData);
 	const { title, body } = formData;
 
@@ -24,6 +25,7 @@ export const Postform = () => {
 		e.preventDefault();
 		console.log(formData);
 		setFormData(defaultFormData);
+		dispatch(posted(formData.title + formData.body));
 	};
 
 	return (
@@ -47,4 +49,4 @@ export const Postform = () => {
 	);
 };
 
-export default Postform;
+export default PostForm;
