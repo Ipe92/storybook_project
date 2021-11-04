@@ -9,7 +9,6 @@ const defaultFormData = {
 
 export const PostForm = () => {
 	const post = useAppSelector((state) => state.post);
-	console.log("POSTFORM", post);
 	const dispatch = useAppDispatch();
 
 	const [formData, setFormData] = useState(defaultFormData);

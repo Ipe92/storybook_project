@@ -2,7 +2,6 @@ import { useAppDispatch, useAppSelector } from "../../redux/hooks";
 
 export const Posts = () => {
 	const posts = useAppSelector((state) => state.post);
-	console.log("POSTS", posts);
 	const dispatch = useAppDispatch();
 
 	const postItems = posts.map((post, index) => (
