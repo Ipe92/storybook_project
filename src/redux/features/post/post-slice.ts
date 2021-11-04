@@ -1,19 +1,16 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-interface PostState {
-	value: string;
+interface Post {
+	title: string;
+	body: string;
 }
-
-const initialState: PostState = {
-	value: "default value",
-};
 
 const postSlice = createSlice({
 	name: "post",
-	initialState,
+	initialState: [] as Post[],
 	reducers: {
-		posted(state, action: PayloadAction<string>) {
-			state.value += action.payload;
+		posted: (state, action: PayloadAction<Post>) => {
+			state.push(action.payload);
 		},
 	},
 });

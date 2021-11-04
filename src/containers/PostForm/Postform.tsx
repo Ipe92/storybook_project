@@ -8,7 +8,8 @@ const defaultFormData = {
 };
 
 export const PostForm = () => {
-	const post = useAppSelector((state) => state.post.value);
+	const post = useAppSelector((state) => state.post);
+	console.log("POSTFORM", post);
 	const dispatch = useAppDispatch();
 
 	const [formData, setFormData] = useState(defaultFormData);
@@ -25,7 +26,7 @@ export const PostForm = () => {
 		e.preventDefault();
 		console.log(formData);
 		setFormData(defaultFormData);
-		dispatch(posted(formData.title + formData.body));
+		dispatch(posted(formData));
 	};
 
 	return (
