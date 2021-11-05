@@ -1,4 +1,4 @@
-import { useAppDispatch, useAppSelector } from "../../redux/hooks";
+import { useAppDispatch } from "../../redux/hooks";
 import { posted } from "../../redux/features/post/post-slice";
 import { useState, FormEvent, ChangeEvent } from "react";
 
