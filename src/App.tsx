@@ -8,7 +8,7 @@ import { GlobalStyle } from "./components/styles/global";
 //import { DateCircle } from "./containers/DateCircle/DateCircle";
 import { Div } from "./components/Container/Div";
 import { Header } from "./containers/Header/Header";
-import { PostForm } from "./containers/PostForm/PostForm";
+import { PostForm } from "./containers/PostForm/Postform";
 import { Posts } from "./containers/Posts/Posts";
 
 function App() {
